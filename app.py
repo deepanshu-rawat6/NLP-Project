@@ -2,8 +2,6 @@ from flask import Flask, render_template, request, redirect, url_for
 from ocr_engine import OCREngine
 from pdf_extractor import extract_text_from_pdf
 from utils.helper import allowed_file, save_uploaded_file
-from keyword_extract import extract_keywords
-from yake import KeywordExtractor
 import os
 import spacy
 import yake
